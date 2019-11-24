@@ -1,0 +1,27 @@
+<div class="container">
+    <form [formGroup]="authService.form" class="login-form">
+        <h2>Admin Login</h2>
+        <mat-grid-list cols="1" rowHeight="100px">
+            <mat-grid-tile>
+                <div class="controlers-container">
+                    <mat-form-field>
+                        <input type="text" formControlName="userName" matInput placeholder="User Name" required>
+                        <mat-error>User Name is required</mat-error>
+                    </mat-form-field>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controlers-container">
+                    <mat-form-field>
+                        <input type="password" formControlName="password" matInput placeholder="Password" required>
+                        <mat-error>password is required</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="primary" type="submit" [disabled]="authService.form.invaild" (click)="login()">Submit</button>
+                    </div>
+                </div>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+    </form>
+</div>

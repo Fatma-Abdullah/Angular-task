@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ahmed6",
+      "email": "a@test.com",
+      "phone": 4353453543,
+      "status": "active"
+    },
+    {
+      "name": "Ali",
+      "id": 3,
+      "email": "c@test.com",
+      "phone": 82736,
+      "status": "soft_deleted"
+    },
+    {
+      "name": "Omar",
+      "id": 2,
+      "email": "a@test.com",
+      "phone": 372636722,
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "fatma",
+      "email": "fatma@mail.com",
+      "phone": "6666666666",
+      "status": "active"
+    }
+  ]
+}

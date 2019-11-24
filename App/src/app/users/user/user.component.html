@@ -1,0 +1,36 @@
+<form [formGroup]="usrService.form" class="normal-form">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controlers-container">
+        <input type="hidden" formControlName="id">
+        <mat-form-field>
+          <input type="text" formControlName="name" matInput placeholder="Name">
+          <mat-error>Name is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input type="email" formControlName="email" matInput placeholder="E-mail">
+          <mat-error *ngIf="usrService.form.controls['email'].errors?.required">Email is required</mat-error>
+          <mat-error *ngIf="usrService.form.controls['email'].errors?.email">Email format isn't correct</mat-error>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <div class="controlers-container">
+        <mat-form-field>
+          <input type="text" formControlName="phone" matInput placeholder="Phone">
+          <mat-error *ngIf="usrService.form.controls['phone'].errors?.required">Phone number is required</mat-error>
+          <mat-error *ngIf="usrService.form.controls['phone'].errors?.minLength">Phone numbers sould be +8</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input type="email" formControlName="status" matInput placeholder="Status">
+          <mat-error>Status is required</mat-error>
+        </mat-form-field>
+        <div class="button-row">
+            <button mat-raised-button color="primary" type="submit" [disabled]="usrService.form.invaild" (click)="onSubmit()">Submit</button>
+          </div>
+      </div>
+    </mat-grid-tile>
+  
+  </mat-grid-list>
+</form>

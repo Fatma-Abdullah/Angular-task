@@ -1,0 +1,15 @@
+{
+    "Home":{
+        "title":"User Data",
+        "name": "Name",
+        "email": "E-mail",
+        "phone": "Phone",
+        "status": "Status",
+        "action": "ِActions",
+        "select": "Select Language",
+        "create": "Create",
+        "edit": "Edit",
+        "delete": "Delete",
+        "login": "Login"
+    }
+}

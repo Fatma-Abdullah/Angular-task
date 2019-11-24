@@ -1,0 +1,11 @@
++---*app
+|      +--*Users
+|      | -- users.component
+|      | -- *User
+|      |    |--user.component
+
+|      | --*services Folder
+|      |    |-- user.service.ts(form group)
+
+|      | 
+|      |--app.module.ts
